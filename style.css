@@ -57,3 +57,161 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
+.hero {
+    background: url('/pexels-tima-miroshnichenko-5453832.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px; /* Increase padding for more height */
+    min-height: 300px; /* Ensures a bigger hero section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* How It Works Section */
+.how-it-works {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.how-it-works h2 {
+    margin-bottom: 30px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+}
+
+.step h3 {
+    margin: 10px 0;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.why-choose-us ul {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.why-choose-us li {
+    justify-content: center;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.about-us p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Contact Us Section */
+.contact-us {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-us textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-us button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.contact-us button:hover {
+    background-color: #0056b3;
+}

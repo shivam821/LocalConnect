@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,900;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.homeClass {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu a, .homeClass a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    /* transition: 0.3s; */
+}
+
+.menu a:hover, .homeClass a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+.card {
+    min-height: 250px; /* Set a minimum height for the cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+/* .navbar {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+} */
+
+/* Hero Section */
+.container-fluid {
+    /* background: url('/pexels-tima-miroshnichenko-5453832.jpg') no-repeat center center/cover; */
+    color: white;
+    text-align: center;
+    padding: 120px 20px; /* Increase padding for more height */
+    min-height: 300px; /* Ensures a bigger hero section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.container-fluid h3 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+}
+
+/* Search Box */
+.container input#search-input {
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    padding: 12px;
+}
+
+/* Service List */
+.list-group {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.list-group-item h4 {
+    color: #007bff;
+    font-size: 1.5em;
+}
+
+.list-group-item p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 50px 10px;
+    }
+
+    .container-fluid h3 {
+        font-size: 2em;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu a {
+        display: block;
+        margin: 5px 0;
+    }
+}
