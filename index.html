@@ -80,13 +80,15 @@
         <h2>Contact Us</h2>
         <p>Have any questions? Feel free to reach out!</p>
         <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" name="name" placeholder="Your Name" required id="name">
+            <input type="email" name="email" placeholder="Your Email" required id="email">
+            <textarea name="message" placeholder="Your Message" required id="message"></textarea>
+            <button type="submit" id="submitButton">Send Message</button>
         </form>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="/index.js"></script>
 
 
 </body>

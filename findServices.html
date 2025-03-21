@@ -24,7 +24,7 @@
         <h3 class="text-center">Find Service</h3>
     </div>
 
-    <div class="container col-6">
+    <!-- <div class="container col-7">
         <input type="text" class="form-control mb-5 p-3" id="search-input" placeholder="Search here">
         <ul class="list-group list-group-flush text-primary h5">
             <li class="list-group-item p-3">
@@ -56,33 +56,17 @@
 
             </li>
         </ul>
-    </div>
-
-    <!-- <div class="row">
-        <div class="col-md-3 mb-4">
-            <div class="card p-3 d-flex">
-                <h4>Azimullah plumbing works</h4>
-                <p><strong>Phone:</strong>9768217750</p>
-                <p><strong>Address:</strong>Marol pipe line, Andheri - Kurla Rd, Andheri East, Mumbai, Maharashtra 400059</p>
-            </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card p-3 d-flex">
-                <h4>Afroz Plumbing Work</h4>
-                <p><strong>Phone:</strong>9930198277</p>
-                <p><strong>Address:</strong>Makwana Rd, Gamdevi, Marol, Andheri East, Mumbai, Maharashtra 400059</p>
-            </div>
-        </div>
-        <div class="col-md-3 mb-4">
-            <div class="card p-3 d-flex">
-                <h4>Allwyn Professional Electrician</h4>
-                <p><strong>Phone:</strong>9702758483</p>
-                <p><strong>Address:</strong>Marol Maroshi Rd, Sankara Nagar, Marol, Andheri East, Mumbai, Maharashtra 400059</p>
-            </div>
-        </div>
     </div> -->
 
-    <script src="/main.js"></script>
+    <div class="container col-7">
+        <input type="text" class="form-control mb-5 p-3" id="search-input" placeholder="Search here">
+        <ul class="list-group list-group-flush text-primary h5" id="service-list">
+            <!-- Data will be populated here dynamically -->
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="/findServices.js"></script>
 
 </body>
 </html>

@@ -61,16 +61,27 @@ body {
 
 
 /* Hero Section */
-.container-fluid {
-    /* background: url('/pexels-tima-miroshnichenko-5453832.jpg') no-repeat center center/cover; */
+/* .container-fluid {
+    background: url('/pexels-tima-miroshnichenko-5453832.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 120px 20px; /* Increase padding for more height */
-    min-height: 300px; /* Ensures a bigger hero section */
+    padding: 120px 20px;
+    min-height: 300px; 
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+} */
+
+.container-fluid {
+    background: url('/pexels-tima-miroshnichenko-5453832.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px; /* Increase padding for more height */
+    min-height: 422px; /* Ensures a bigger hero section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-fluid h3 {
@@ -81,6 +92,7 @@ body {
 
 /* Search Box */
 .container input#search-input {
+    margin-top: 40px;
     font-size: 1.2em;
     border-radius: 5px;
     border: 1px solid #007bff;
