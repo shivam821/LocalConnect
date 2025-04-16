@@ -90,7 +90,7 @@ const submit_button = document.getElementById('submitButton');
 submit_button.addEventListener('click', async (event) => {
     event.preventDefault();
 
-    // Save form data in localStorage
+    // Save form data to localStorage
     const formData = {
         service_provider_name: provider_name.value,
         email: provider_email.value,
@@ -103,8 +103,9 @@ submit_button.addEventListener('click', async (event) => {
         website: provider_website.value
     };
 
-    localStorage.setItem('pendingFormData', JSON.stringify(formData));
+    localStorage.setItem('pendingServiceForm', JSON.stringify(formData));
 
     // Redirect to Razorpay payment page
     window.location.href = 'https://rzp.io/rzp/ANrbnCA';
 });
+

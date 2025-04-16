@@ -5,22 +5,20 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 // Initialize Supabase
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-async function insertData() {
-    const formData = JSON.parse(localStorage.getItem('pendingFormData'));
+window.addEventListener('DOMContentLoaded', async () => {
+    const formData = JSON.parse(localStorage.getItem('pendingServiceForm'));
 
     if (!formData) {
-        console.log('No data found');
+        alert('No service form found to submit.');
         return;
     }
 
     const { data, error } = await supabase.from('service_providers').insert([formData]);
 
     if (error) {
-        console.error('Error inserting:', error.message);
+        alert('Error while submitting your service data. Please try again.');
     } else {
-        console.log('Inserted:', data);
-        localStorage.removeItem('pendingFormData');
+        alert('Service listed successfully!');
+        localStorage.removeItem('pendingServiceForm');
     }
-}
-
-insertData();
+});
