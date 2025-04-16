@@ -62,7 +62,7 @@
             <form action="#" method="POST">
                 <div class="mb-3">
                     <label for="name" class="form-label">Service Provider Name</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
+                    <input type="text" id="provider-name" name="name" class="form-control" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
@@ -79,6 +79,13 @@
                         <option value="Plumber">Plumber</option>
                         <option value="Electrician">Electrician</option>
                         <option value="Tutor">Tutor</option>
+                        <option value="Carpenter">Carpenter</option>
+                        <option value="Painter">Painter</option>
+                        <option value="Mechanic">Mechanic</option>
+                        <option value="Gardener">Gardener</option>
+                        <option value="Pest Control Specialist">Pest Control Specialist</option>
+                        <option value="Tailor">Tailor</option>
+                        <option value="Welder">Welder</option>
                         <option value="Other">Other</option>
                     </select>
                 </div>
@@ -102,7 +109,7 @@
                     <label for="website" class="form-label">Website (Optional)</label>
                     <input type="url" id="website" name="website" class="form-control">
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                <button type="submit" id="submitButton" class="btn btn-primary w-100">Submit</button>
             </form>
         </div>
     </div>
@@ -117,6 +124,7 @@
         </p>
     </footer>
 
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="/addServices.js"></script>
 

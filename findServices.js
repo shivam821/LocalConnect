@@ -38,7 +38,7 @@ async function fetchServiceProviders() {
             listItem.classList.add("list-group-item", "p-3");
 
             listItem.innerHTML = `
-                <h4>${provider.name}</h4>
+                <h4>${provider.service_provider_name}</h4>
                 <p><strong>Category:</strong> ${provider.category}</p>
                 <p><strong>Phone:</strong> ${provider.phone}</p>
                 <p><strong>Address:</strong> ${provider.address}</p>
