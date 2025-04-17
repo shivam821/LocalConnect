@@ -20,6 +20,6 @@ jobs:
           aws-region: ap-south-1  # Change to your AWS region
 
       - name: Sync files to S3
-        run: aws s3 sync . s3://localconnect-website  # Change to your S3 bucket name
+        run: aws s3 sync . s3://servicefinder.site  # Change to your S3 bucket name
         
         
