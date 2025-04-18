@@ -21,42 +21,7 @@
         </div>
     </nav>
 
-    <!-- <div class="container">
-        <h2>List Your Service</h2>
-        <form action="#" method="POST">
-            <label for="name">Service Provider Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="category">Category</label>
-            <input type="text" id="category" name="category" required>
-
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" required>
-
-            <label for="state">State</label>
-            <input type="text" id="state" name="state" required>
-
-            <label for="address">Full Address</label>
-            <textarea id="address" name="address" rows="3" required></textarea>
-
-            <label for="description">Description</label>
-            <textarea id="description" name="description" rows="4" required></textarea>
-
-            <label for="website">Website (Optional)</label>
-            <input type="url" id="website" name="website">
-
-            <button type="submit" class="submitButton">Submit</button>
-        </form>
-    </div> -->
-
-
-    <div class="container mt-5">
+    <!-- <div class="container mt-5">
         <h2 class="text-center mb-4">List Your Service</h2>
         <div class="card p-4 shadow-sm">
             <form action="#" method="#">
@@ -112,7 +77,112 @@
                 <button type="submit" id="submitButton" class="btn btn-primary w-100">Submit</button>
             </form>
         </div>
-    </div>
+    </div> -->
+
+      <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+              <h2>List Your Service</h2>
+              <p>Fill in the details below to get your service listed on our platform.</p>
+          </div>
+      </section>
+
+    <section class="container">
+        <!-- <header>List Your Service</header> -->
+        <p>One step away from being discovered, add your service now.</p>
+        <form action="#" class="form">
+          <div class="input-box">
+            <label>Service Provider Name</label>
+            <input
+              type="text"
+              id="provider-name"
+              placeholder="Enter service provider name"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <label>Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <label>Category</label>
+              <div class="select-box">
+                <select required id="category">
+                  <option hidden>Choose Cateogry</option>
+                  <option value="Plumber">Plumber</option>
+                  <option value="Electrician">Electrician</option>
+                  <option value="Tutor">Tutor</option>
+                  <option value="Carpenter">Carpenter</option>
+                  <option value="Painter">Painter</option>
+                  <option value="Mechanic">Mechanic</option>
+                  <option value="Gardener">Gardener</option>
+                  <option value="Pest Control Specialist">Pest Control Specialist</option>
+                  <option value="Tailor">Tailor</option>
+                  <option value="Welder">Welder</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="input-box address">
+            <label>Address</label>
+            <input
+              type="text"
+              id="address"
+              placeholder="Enter full address"
+              required
+            />
+            <div class="column">
+              <input
+                type="text"
+                id="city"
+                placeholder="Enter your City"
+                required
+              />
+              <input
+                type="text"
+                id="state"
+                placeholder="Enter your State"
+                required
+              />
+            </div>
+          </div>
+          <div class="input-box address">
+            <label>Description</label>
+            <input
+              type="text"
+              id="description"
+              placeholder="Enter description"
+              required
+            />
+          </div>
+          <div class="input-box address">
+            <label>Website</label>
+            <input
+              type="text"
+              id="website"
+              placeholder="Enter your websiite"
+              required
+            />
+          </div>
+          <button type="submit" id="submitButton">Submit</button>
+        </form>
+      </section>
 
 
     <footer class="bg-dark text-white text-center py-3 mt-5">

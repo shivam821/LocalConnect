@@ -1,102 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,900;1,900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  min-height: 100vh;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: #333;
-    color: white;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.homeClass {
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
-}
-
-.menu {
-    display: flex;
-    gap: 1rem;
-}
-
-.menu a, .homeClass a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-}
-
-.menu a:hover, .homeClass a:hover {
-    background: #555;
-    border-radius: 5px;
-}
-
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-h2 {
-    font-weight: bold;
-    text-align: center;
-}
-label {
-    font-weight: bold;
-    margin-top: 10px;
-    display: block;
-}
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.submitButton {
-    width: 100%;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 30px;
-}
-button:hover {
-    background: #0056b3;
-}
-
-
-
- */
-
-
-
-
- @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,900;1,900&display=swap");
 
 * {
   margin: 0;
@@ -170,9 +72,8 @@ body {
 }
 
 .container p{
-    font-size: 1.5rem;
-    /* color: #333; */
-    color: #007bff;
+    font-size: 1 rem;
+    color: #333;
     font-weight: 500;
     text-align: center;
 }
@@ -253,13 +154,11 @@ body {
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  background: #007bff;
-  /* background: rgb(130, 106, 251); */
+  background: rgb(130, 106, 251);
   border-radius: 0.5em;
 }
 .form button:hover {
-  background: #0056b3;
-  /* background: rgb(88, 56, 250); */
+  background: rgb(88, 56, 250);
 }
 @media screen and (max-width: 500px) {
   .column {
@@ -268,30 +167,4 @@ body {
   .form :where(.gender-option, .gender) {
     row-gap: 15px;
   }
-}
-
-
-.hero {
-  background: url('/pexels-tima-miroshnichenko-5453832.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 120px 20px; /* Increase padding for more height */
-  min-height: 422px; /* Ensures a bigger hero section */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
-  max-width: 600px;
-  margin: auto;
-}
-
-.hero h2 {
-  font-size: 2.5em;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
 }
